@@ -236,6 +236,19 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.thumb {
+   
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-position: center;
+
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+
+
 .section-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -313,6 +326,13 @@ body {
   color: var(--secondary-color);
 }
 
+.soc-net {
+
+}
+
+.center {
+  background-position: center;
+}
 
 /* Footer */
 
