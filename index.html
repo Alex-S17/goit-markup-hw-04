@@ -23,7 +23,7 @@
     <!--Header-->
     <header>
       <div class="flex container">
-        <nav class="flex">
+        <nav class="flex vert-center">
           <a class="logo" href="./index.html"> <span class="word-web">Web</span>Studio</a>
           <ul class="flex list">
             <li class="item">
@@ -39,19 +39,30 @@
         </nav>
         <ul class="contacts list">
           <li class="item-contacts">
-            <a class="mail-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="mail-phone" href="mailto:info@devstudio.com">
+              <svg class="color top-marg" width="16" height="12">
+                <use href="./images/icons.svg#header-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="item-contacts">
-            <a class="mail-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="mail-phone" href="tel:+380961111111">
+              <svg class="color" width="10" height="16">
+                <use href="./images/icons.svg#header-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
+
     <!--Main-->
     <main>
       <!--Блок Герой-->
       <section class="hero">
-        <div class="bgr-image">
+        <div class="overlay">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -118,13 +129,28 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="flex list">
             <li class="our-business">
-              <img src="./images/img-box1.jpg" alt="Фото деятельности-1" width="370" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-box1.jpg"
+                alt="Фото деятельности-1"
+                width="370"
+              />
             </li>
             <li class="our-business">
-              <img src="./images/img-box2.jpg" alt="Фото деятельности-2" width="370" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-box2.jpg"
+                alt="Фото деятельности-2"
+                width="370"
+              />
             </li>
             <li class="our-business">
-              <img src="./images/img-box3.jpg" alt="Фото деятельности-3" width="370" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-box3.jpg"
+                alt="Фото деятельности-3"
+                width="370"
+              />
             </li>
           </ul>
         </div>
@@ -134,118 +160,242 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="flex list">
+            <!-- Демьяненко -->
             <li class="team-item">
-              <img src="./images/img-demjanenko.jpg" alt="Игорь Демьяненко" width="270" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-demjanenko.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+              />
               <div class="title-paragr">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-paragraph" lang="en">Product Designer</p>
               </div>
 
-              <!-- ХОВЕР НА СОЦСЕТИ ТЕСТОВЫЙ БЛОК-->
-
-              <!-- Устанавливаем общий блок иконок -->
-              <ul class="soc-net list">
-                <!-- Устанавливаем блок под иконку -->
-                <li class="soc-net-icon">
-                  <a href="http://instagram.com">
-                    <!-- Устанавливаем начальный цвет иконки -->
-                    <svg class="icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <!-- КОНЕЦ ТЕСТОВОГО БЛОКА -->
-
-                <li class="soc-net-icon">
-                  <a href="http://twitter.com">
-                    <svg class="icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="soc-net-icon">
-                  <a href="http://facebook.com">
-                    <svg class="icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="soc-net-icon">
-                  <a href="http://linkedin.com">
-                    <svg class="icon-color" width="20" height="20">
-                      <use href="./images/icons.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <!-- Блок соцсети с ховером для Демьяненко-->
+              <div class="soc-net">
+                <ul class="flex list">
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://instagram.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://twitter.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://facebook.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://linkedin.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
+            <!-- Репина -->
             <li class="team-item">
-              <img src="./images/img-repina.jpg" alt="Ольга Репина" width="270" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-repina.jpg"
+                alt="Ольга Репина"
+                width="270"
+              />
               <div class="title-paragr">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p class="team-paragraph" lang="en">Frontend Developer</p>
               </div>
+
+              <!-- Блок соцсети с ховером для Репиной-->
+              <div class="soc-net">
+                <ul class="flex list">
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://instagram.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://twitter.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://facebook.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://linkedin.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
+            <!-- Тарасов -->
             <li class="team-item">
-              <img src="./images/img-tarasov.jpg" alt="Николай Тарасов" width="270" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-tarasov.jpg"
+                alt="Николай Тарасов"
+                width="270"
+              />
               <div class="title-paragr">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p class="team-paragraph" lang="en">Marketing</p>
               </div>
+
+              <!-- Блок соцсети с ховером для Тарасова-->
+              <div class="soc-net">
+                <ul class="flex list">
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://instagram.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://twitter.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://facebook.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://linkedin.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
+            <!-- Ермаков -->
             <li class="team-item">
-              <img src="./images/img-ermakov.jpg" alt="Михаил Ермаков" width="270" />
+              <img
+                class="no-bottom-space"
+                src="./images/img-ermakov.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+              />
               <div class="title-paragr">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p class="team-paragraph" lang="en">UI Designer</p>
+              </div>
+
+              <!-- Блок соцсети с ховером для Ермакова-->
+              <div class="soc-net">
+                <ul class="flex list">
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://instagram.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://twitter.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://facebook.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-item">
+                    <a class="soc-net-icon" href="http://linkedin.com">
+                      <svg class="icon-color" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
-
+      <!-- Блок Постоянные клиенты -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="box-clients list">
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients">
-              <a href="">
+            <li class="client-item">
+              <a class="clients" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/icons.svg#client6"></use>
                 </svg>
@@ -255,6 +405,7 @@
         </div>
       </section>
     </main>
+
     <!--Footer-->
     <footer class="footer">
       <div class="container">
@@ -280,36 +431,34 @@
             </div>
           </li>
           <li>
+            <!-- Иконки соцсетей Присоединяйтесь -->
             <div class="join">
-              <h3 class="section-subtitle foot-subt">Присоединяйтесь</h3>
-
-              <ul class="footer-flex">
-                <!-- Устанавливаем блок под иконку -->
-                <li class="soc-net-icon dark-backgr">
-                  <a href="http://instagram.com">
-                    <!-- Устанавливаем начальный цвет иконки -->
-                    <svg class="icon-color foot-icon-col" width="20" height="20">
+              <h3 class="section-subtitle foot-subtitle">Присоединяйтесь</h3>
+              <ul class="footer-flex list">
+                <li class="foot-soc-item">
+                  <a class="soc-net-icon different-colors" href="http://instagram.com">
+                    <svg class="foot-icon-col" width="20" height="20">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="soc-net-icon dark-backgr">
-                  <a href="http://twitter.com">
-                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                <li class="foot-soc-item">
+                  <a class="soc-net-icon different-colors" href="http://twitter.com">
+                    <svg class="foot-icon-col" width="20" height="20">
                       <use href="./images/icons.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="soc-net-icon dark-backgr">
-                  <a href="http://facebook.com">
-                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                <li class="foot-soc-item">
+                  <a class="soc-net-icon different-colors" href="http://facebook.com">
+                    <svg class="foot-icon-col" width="20" height="20">
                       <use href="./images/icons.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="soc-net-icon dark-backgr">
-                  <a href="http://linkedin.com">
-                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                <li class="foot-soc-item">
+                  <a class="soc-net-icon different-colors" href="http://linkedin.com">
+                    <svg class="foot-icon-col" width="20" height="20">
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
