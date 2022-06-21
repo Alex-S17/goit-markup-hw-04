@@ -51,7 +51,7 @@
     <main>
       <!--Блок Герой-->
       <section class="hero">
-        <div class="container">
+        <div class="bgr-image">
           <h1 class="hero-title">
             Эффективные решения <br />
             для вашего бизнеса
@@ -67,8 +67,8 @@
           <ul class="our-advant-set list">
             <li class="item-adv">
               <div class="thumb">
-                <svg>
-                  <use href="./images/icons.svg#advant-antenna" width="70" height="70"></use>
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#advant-antenna"></use>
                 </svg>
               </div>
               <h3 class="section-subtitle">Внимание к деталям</h3>
@@ -78,8 +78,8 @@
             </li>
             <li class="item-adv">
               <div class="thumb">
-                <svg>
-                  <use href="./images/icons.svg#advant-clock" width="70" height="70"></use>
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#advant-clock"></use>
                 </svg>
               </div>
               <h3 class="section-subtitle">Пунктуальность</h3>
@@ -89,8 +89,8 @@
             </li>
             <li class="item-adv">
               <div class="thumb">
-                <svg>
-                  <use href="./images/icons.svg#advant-diagram" width="70" height="70"></use>
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#advant-diagram"></use>
                 </svg>
               </div>
               <h3 class="section-subtitle">Планирование</h3>
@@ -100,8 +100,8 @@
             </li>
             <li class="item-adv">
               <div class="thumb">
-                <svg>
-                  <use href="./images/icons.svg#advant-astronaut" width="70" height="70"></use>
+                <svg width="70" height="70">
+                  <use href="./images/icons.svg#advant-astronaut"></use>
                 </svg>
               </div>
               <h3 class="section-subtitle">Современные технологии</h3>
@@ -140,15 +140,44 @@
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p class="team-paragraph" lang="en">Product Designer</p>
               </div>
-              <ul class="soc-net">
-                <li class="center">
-                  <svg width="40" height="40">
-                    <use href="./images/icons.svg#instagram" width="20" height="20"></use>
-                  </svg>
+
+              <!-- ХОВЕР НА СОЦСЕТИ ТЕСТОВЫЙ БЛОК-->
+
+              <!-- Устанавливаем общий блок иконок -->
+              <ul class="soc-net list">
+                <!-- Устанавливаем блок под иконку -->
+                <li class="soc-net-icon">
+                  <a href="http://instagram.com">
+                    <!-- Устанавливаем начальный цвет иконки -->
+                    <svg class="icon-color" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+
+                <!-- КОНЕЦ ТЕСТОВОГО БЛОКА -->
+
+                <li class="soc-net-icon">
+                  <a href="http://twitter.com">
+                    <svg class="icon-color" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-net-icon">
+                  <a href="http://facebook.com">
+                    <svg class="icon-color" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-net-icon">
+                  <a href="http://linkedin.com">
+                    <svg class="icon-color" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="team-item">
@@ -175,24 +204,120 @@
           </ul>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="box-clients list">
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients">
+              <a href="">
+                <svg class="client-icon" width="106" height="60">
+                  <use href="./images/icons.svg#client6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <a class="logo logo-footer" href="./index.html"><span class="word-web">Web</span>Studio</a>
-        <address>
-          <ul class="contacts-footer list">
-            <li class="item-footer">
-              <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
-            <li class="item-footer">
-              <a class="link-footer" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="item-footer">
-              <a class="link-footer" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <ul class="footer-flex list">
+          <li>
+            <div class="no-right-margin">
+              <a class="logo logo-footer" href="./index.html"
+                ><span class="word-web">Web</span>Studio</a
+              >
+              <address>
+                <ul class="contacts-footer list">
+                  <li class="item-footer">
+                    <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
+                  </li>
+                  <li class="item-footer">
+                    <a class="link-footer" href="mailto:info@example.com">info@example.com</a>
+                  </li>
+                  <li class="item-footer">
+                    <a class="link-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </li>
+          <li>
+            <div class="join">
+              <h3 class="section-subtitle foot-subt">Присоединяйтесь</h3>
+
+              <ul class="footer-flex">
+                <!-- Устанавливаем блок под иконку -->
+                <li class="soc-net-icon dark-backgr">
+                  <a href="http://instagram.com">
+                    <!-- Устанавливаем начальный цвет иконки -->
+                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-net-icon dark-backgr">
+                  <a href="http://twitter.com">
+                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-net-icon dark-backgr">
+                  <a href="http://facebook.com">
+                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="soc-net-icon dark-backgr">
+                  <a href="http://linkedin.com">
+                    <svg class="icon-color foot-icon-col" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
